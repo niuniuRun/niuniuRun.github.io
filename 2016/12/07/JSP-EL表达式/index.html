@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="EL表达式,JSP," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1）语法结构${expression} 2）[]与.运算符EL 提供.和[]两种运算符来存取数据。 当要存取的属性名称中包含一些特殊字符，如.或?等并非字母或数字的符号，就一定要使用 []。例如： ${user.My-Name}应当改为${user[&amp;quot;My-Name&amp;quot;] } 如果要动态取值时，就可以用[]来做，而.无法做到动态取值。例如： ${sessionScope.user">
+<meta name="keywords" content="EL表达式,JSP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSP-EL表达式">
+<meta property="og:url" content="http://yoursite.com/2016/12/07/JSP-EL表达式/index.html">
+<meta property="og:site_name" content="Richard&#39;s Blog">
+<meta property="og:description" content="1）语法结构${expression} 2）[]与.运算符EL 提供.和[]两种运算符来存取数据。 当要存取的属性名称中包含一些特殊字符，如.或?等并非字母或数字的符号，就一定要使用 []。例如： ${user.My-Name}应当改为${user[&amp;quot;My-Name&amp;quot;] } 如果要动态取值时，就可以用[]来做，而.无法做到动态取值。例如： ${sessionScope.user">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-26T12:54:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JSP-EL表达式">
+<meta name="twitter:description" content="1）语法结构${expression} 2）[]与.运算符EL 提供.和[]两种运算符来存取数据。 当要存取的属性名称中包含一些特殊字符，如.或?等并非字母或数字的符号，就一定要使用 []。例如： ${user.My-Name}应当改为${user[&amp;quot;My-Name&amp;quot;] } 如果要动态取值时，就可以用[]来做，而.无法做到动态取值。例如： ${sessionScope.user">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '6303769650387748000',
+      author: 'ţţ'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/07/JSP-EL表达式/"/>
+
+
+
+
+
+  <title>JSP-EL表达式 | Richard's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Richard's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">为BUG而生</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/07/JSP-EL表达式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JSP-EL表达式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-07T16:07:22+08:00">
+                2016-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JSP/" itemprop="url" rel="index">
+                    <span itemprop="name">JSP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/12/07/JSP-EL表达式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/07/JSP-EL表达式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="1）语法结构"><a href="#1）语法结构" class="headerlink" title="1）语法结构"></a>1）语法结构</h4><pre><code>${expression}
+</code></pre><h4 id="2）-与-运算符"><a href="#2）-与-运算符" class="headerlink" title="2）[]与.运算符"></a>2）[]与.运算符</h4><p>EL 提供.和[]两种运算符来存取数据。</p>
+<p>当要存取的属性名称中包含一些特殊字符，如.或?等并非字母或数字的符号，就一定要使用 []。例如：</p>
+<pre><code>${user.My-Name}应当改为${user[&quot;My-Name&quot;] }
+</code></pre><p>如果要动态取值时，就可以用[]来做，而.无法做到动态取值。例如：</p>
+<pre><code>${sessionScope.user[data]}中data 是一个变量
+</code></pre><h4 id="3）变量"><a href="#3）变量" class="headerlink" title="3）变量"></a>3）变量</h4><p>EL存取变量数据的方法很简单，例如：${username}。它的意思是取出某一范围中名称为username的变量。</p>
+<p>因为我们并没有指定哪一个范围的username，所以它会依序从Page、Request、Session、Application范围查找。</p>
+<p>假如途中找到username，就直接回传，不再继续找下去，但是假如全部的范围都没有找到时，就回传null。</p>
+<p>属性范围在EL中的名称</p>
+<pre><code>Page            PageScope
+Request         RequestScope
+Session         SessionScope
+Application     ApplicationScope
+</code></pre><h4 id="4）11内置对象"><a href="#4）11内置对象" class="headerlink" title="4）11内置对象"></a>4）11内置对象</h4><blockquote>
+<p>pageScope : 用于获取page范围的属性值。</p>
+<p>requestScope : 用于获取request范围的属性值。</p>
+<p>sessionScope : 用于获取session范围的属性值。</p>
+<p>applicationScope : 用于获取application范围的属性值。</p>
+<p>param : 用于获取请求的参数值。该内置对象的类型是Map&lt;String,String&gt;，可以用来获取值为单值的请求参数，其中key指的是请求参数的名称，value指的是请求参数的值，使用param获取请求参数与request.getParameter()方法一样。</p>
+<p>paramValues : 用于获取请求的参数值。与param区别在于，该对象用于获取属性值为数组的属性值。该内置对象的类型Map&lt;String,String[]&gt;，可以用来获取值为多值的请求参数，其中key是参数名，value是多个参数值组成的字符串数组。</p>
+<p>header : 用于获取请求头的属性值。该内置对象的类型是Map&lt;String,String&gt;。用法${header.key}</p>
+<p>headerValues : 用于获取请求头的属性值。与header区别在于，该对象用于获取属性值为数组的属性值。该内置对象的类型是Map&lt;String,String[]&gt;。用法${headerValues.key[0…]}</p>
+<p>initParam : 用于获取Web应用的初始化参数。</p>
+<p>cookie : 用于获取指定的cookie值。该内置对象的类型为Map&lt;String,Cookie&gt;。用法${cookie.key}可以获得cookie对象本身<br>然后获得通过cookie.value获得cookie里面存储的value，简化方法<br>${cookie.key.value}。</p>
+<p>pageContext : 代表该页面的pageContext对象，与JSP的pageContext内置对象相同。用法${pageContext.request}，类似pageContext.getRequest()方法，返回一个request对象。用法二${pageContext.request.contextPath}，获取当前工程的名字。</p>
+<blockquote>
+<p>当然，使用pageContext内置对象还可以获取session对象的id值，如：${pageContext.session.id}。pageContext对象可以获取jsp的其他内置对象，所以通过pageContext对象可以获取其他内置对象的任意的属性值。</p>
+</blockquote>
+</blockquote>
+<h4 id="5）EL表达式的自定义函数"><a href="#5）EL表达式的自定义函数" class="headerlink" title="5）EL表达式的自定义函数"></a>5）EL表达式的自定义函数</h4><p><strong>此方法可参考JSP自定义标签文档中例子</strong></p>
+<p>步骤</p>
+<p>1.开发函数处理类，函数处理类就是普通类，这个普通类包含若干个静态方法，每个静态方法都可以定义成一个函数。</p>
+<p>2.使用标签库定义函数，定义函数的方法与定义标签的方法大致相似。在&lt;taglib../&gt;元素下增加&lt;function../&gt;元素用于定义自定义函数。</p>
+<p>&lt;function../&gt;子元素</p>
+<blockquote>
+<p>name:指定自定义函数的名称</p>
+<p>funciton-class:指定自定义函数的处理类</p>
+<p>funciton-signature:指定自定义函数对应的方法。  </p>
+</blockquote>
+<p>代码如下：</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;GBK&quot;?&gt;
+&lt;taglib xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee 
+    web-jsptaglibrary_2_0.xsd&quot; version=&quot;2.0&quot;&gt;
+    &lt;tlib-version&gt;1.0&lt;/tlib-version&gt;
+    &lt;short-name&gt;crazyit&lt;/short-name&gt;
+    &lt;!-- 定义该标签库的URI --&gt;
+    &lt;uri&gt;http://www.crazyit.org/tags&lt;/uri&gt;
+    &lt;!-- 定义第一个函数 --&gt;
+    &lt;function&gt;
+        &lt;!-- 定义函数名:reverse --&gt;
+        &lt;name&gt;reverse&lt;/name&gt;
+        &lt;!-- 定义函数的处理类 --&gt;
+        &lt;function-class&gt;lee.Functions&lt;/function-class&gt;
+        &lt;!-- 定义函数的实现方法--&gt;
+        &lt;function-signature&gt;
+            java.lang.String reverse(java.lang.String)&lt;/function-signature&gt;
+    &lt;/function&gt;
+    &lt;!-- 定义第二个函数: countChar --&gt;
+    &lt;function&gt;
+        &lt;!-- 定义函数名:countChar --&gt;
+        &lt;name&gt;countChar&lt;/name&gt;
+        &lt;!-- 定义函数的处理类 --&gt;
+        &lt;function-class&gt;lee.Functions&lt;/function-class&gt;
+        &lt;!-- 定义函数的实现方法--&gt;
+        &lt;function-signature&gt;int countChar(java.lang.String)
+            &lt;/function-signature&gt;
+    &lt;/function&gt;
+&lt;/taglib&gt;
+</code></pre><p>调用代码如下：</p>
+<pre><code>......
+&lt;%@ taglib prefix=&quot;crazyit&quot; uri=&quot;http://www.crazyit.org/tags&quot;%&gt;
+......
+    &lt;table border=&quot;1&quot; bgcolor=&quot;aaaadd&quot;&gt;
+        &lt;tr&gt;
+        &lt;td&gt;&lt;b&gt;表达式语言&lt;/b&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;b&gt;计算结果&lt;/b&gt;&lt;/td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${param[&quot;name&quot;]}&lt;/td&gt;
+            &lt;td&gt;${param[&quot;name&quot;]}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!--  使用reverse函数--&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:reverse(param[&quot;name&quot;])}&lt;/td&gt;
+            &lt;td&gt;${crazyit:reverse(param[&quot;name&quot;])}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:reverse(crazyit:reverse(param[&quot;name&quot;]))}&lt;/td&gt;
+            &lt;td&gt;${crazyit:reverse(crazyit:reverse(param[&quot;name&quot;]))}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!-- 使用countChar函数 --&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:countChar(param[&quot;name&quot;])}&lt;/td&gt;
+            &lt;td&gt;${crazyit:countChar(param[&quot;name&quot;])}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+......
+</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/EL表达式/" rel="tag"># EL表达式</a>
+          
+            <a href="/tags/JSP/" rel="tag"># JSP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/07/JSP自定义标签/" rel="next" title="JSP自定义标签">
+                <i class="fa fa-chevron-left"></i> JSP自定义标签
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/10/Spring-Bean的生命周期/" rel="prev" title="Spring-Bean的生命周期">
+                Spring-Bean的生命周期 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2016/12/07/JSP-EL表达式/"
+           data-title="JSP-EL表达式" data-url="http://yoursite.com/2016/12/07/JSP-EL表达式/">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/pp.png"
+                alt="Richard" />
+            
+              <p class="site-author-name" itemprop="name">Richard</p>
+              <p class="site-description motion-element" itemprop="description">学无止境</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/categories.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/tags.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/niuniuRun" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/u/1666989457" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）语法结构"><span class="nav-number">1.</span> <span class="nav-text">1）语法结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）-与-运算符"><span class="nav-number">2.</span> <span class="nav-text">2）[]与.运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）变量"><span class="nav-number">3.</span> <span class="nav-text">3）变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4）11内置对象"><span class="nav-number">4.</span> <span class="nav-text">4）11内置对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5）EL表达式的自定义函数"><span class="nav-number">5.</span> <span class="nav-text">5）EL表达式的自定义函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Richard</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"niuniurun"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.4"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

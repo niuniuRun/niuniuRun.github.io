@@ -1,0 +1,2728 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="学无止境">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Richard&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Richard&#39;s Blog">
+<meta property="og:description" content="学无止境">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Richard&#39;s Blog">
+<meta name="twitter:description" content="学无止境">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '6303769650387748000',
+      author: 'ţţ'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Richard's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Richard's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">为BUG而生</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/26/Dagger2 官方文档中文翻译/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/26/Dagger2 官方文档中文翻译/" itemprop="url">Dragger2 官方文档中文翻译</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T16:23:55+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Dragger2/" itemprop="url" rel="index">
+                    <span itemprop="name">Dragger2</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/26/Dagger2 官方文档中文翻译/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/26/Dagger2 官方文档中文翻译/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>dagger2 官方地址：<a href="http://google.github.io/dagger/" target="_blank" rel="noopener">http://google.github.io/dagger/</a></p>
+<h2 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h2><p>Dagger 是为 Java 和 Android 设计的静态编译期注入框架。是为了替换由 Square 公司开发的早期版本 dagger1， 目前由谷歌维护。</p>
+<p>Dagger 旨在解决之前基于反射的解决方案所带来的开发和性能问题。更多细节可查看由+Gregory Kick 推出的视频 <a href="https://www.youtube.com/watch?v=oK_XtfXPkqw" target="_blank" rel="noopener">DAGGER 2 - A New Type of dependency injection</a>。</p>
+<h2 id="用户手册"><a href="#用户手册" class="headerlink" title="用户手册"></a>用户手册</h2><p>一个项目中最重要的类有这些， 比如 BarcodeDecoder， KoopaPhysicsEngine， AudioStreamer 等等。 这些类也许会需求这些依赖， 如一个 BarcodeCameraFinder， DefaultPhysicsEngine 和 HttpStreamer。<br>相比而言， 这些类就显得占了位置却不起什么作用， 如 BarcodeDecoderFactory， CameraServiceLoader， MutableContextWrapper 等等。 这些类就如同拙劣的粘着剂将重要的类联系在一起。<br>Dagger就是为了解决依赖注入模式中， 编写这些没有实际作用的工厂类模板文件的负担。 它使你把精力投入到更有意义的编码工作中， 例如声明依赖， 提供依赖， 然后走起你的 app ~<br>基于标准的 javax。inject (JSR 330)注解库， 每个类将会很容易测试。 你不再需要仅仅为了替换一个业务 Service ，而写一堆没用的模板文件。 </p>
+<h3 id="Dagger2-有何不同"><a href="#Dagger2-有何不同" class="headerlink" title="Dagger2 有何不同"></a>Dagger2 有何不同</h3><p>Dagger 构造你的应用程序的类对象并自动注入它们的依赖。 它使用 javax.inject.Inject 下的注解， 来标记哪些构造器或者全局变量需要 Dagger 注意。</p>
+<p>使用 @Inject 来标记一个构造器， 表示 Dagger 指定此构造器来构造相应类的实例。 当某处需要这个类的实例， Dagger 将自动调用此构造器构造实例， 并注入到对应位置。 如果构造器有参数要求， Dagger 也会查找需要的参数实例注入进去。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 热虹吸抽水器</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Thermosiphon</span> <span class="keyword">implements</span> <span class="title">Pump</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">final</span> Heater heater;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Inject</span></span><br><span class="line">  Thermosiphon(Heater heater) &#123; <span class="comment">// 需要 Heater 实例，Dagger 自动查找并注入</span></span><br><span class="line">    <span class="keyword">this</span>.heater = heater;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用 @Inject 直接标记一个全局变量， 在下面的示例中， Dagger 自动查找 Heater 和 Pump 的实例并注入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> Heater heater;</span><br><span class="line">  <span class="meta">@Inject</span> Pump pump;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果某个类只有全局变量被标记了 @Inject， 但构造器没有被标记， 那么 Dagger 会注入这些全局变量， 但不再构造该类的实例(?)。 使用 @Inject 来标记一个无参构造器来表明 Dagger 也会构造它的实例。<br>Dagger 也支持方法注入， 但是往往偏爱构造器或全局变量的注入。<br>没有 @Inject 注解的类， 将不会被 Dagger 创建。</p>
+<h3 id="Satisfying-Dependencies-满足依赖"><a href="#Satisfying-Dependencies-满足依赖" class="headerlink" title="Satisfying Dependencies 满足依赖"></a>Satisfying Dependencies 满足依赖</h3><p>默认的， 如之前所述， Dagger 通过构造相应的类型来满足每个标注的依赖。 比如当你需要一个 CoffeeMaker 实例， Dagger 会调用 new CoffeeMaker() 并注入好它的 @Inject 标记的全局变量来获取一个 CoffeeMaker 实例。<br>但是 @Inject 并非万能:</p>
+<ul>
+<li>接口无法构造实例</li>
+<li>第三方类库无法被注解</li>
+<li>配置相关的对象必须已经初始化好(Configurable objects must be configured!)</li>
+</ul>
+<p>在以下这些场景中， 使用 @Inject 是多余且别扭的， 应该使用 @Provides 来标注一个方法来满足对应的依赖， 这个方法的返回值标注了它提供的类型， 也就是它可以响应哪一种类型的依赖请求。<br>如下面这个案例， 当请求一个 Heater 对象时， provideHeater() 方法会被调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Provides</span> <span class="function"><span class="keyword">static</span> Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>@Provides 注解的方法也可以有它的依赖请求: </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Provides</span> <span class="function"><span class="keyword">static</span> Pump <span class="title">providePump</span><span class="params">(Thermosiphon pump)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> pump;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>所有 @Provides 注解的方法必须属于一个 module， 也就是一个被 @Module 标记的类:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Module</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DripCoffeeModule</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Provides</span> <span class="function"><span class="keyword">static</span> Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Provides</span> <span class="function"><span class="keyword">static</span> Pump <span class="title">providePump</span><span class="params">(Thermosiphon pump)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> pump;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>按照惯例， @Provides 注解的方法都应该以 “provide” 为前缀， @Module 注解的类都应该以 “module” 为后缀。</p>
+<h3 id="构建图容器"><a href="#构建图容器" class="headerlink" title="构建图容器"></a>构建图容器</h3><p>这些拥有 @Inject 和 @Provides 注解的类会组成一个对象图， 通过他们的依赖连接起来。 调用代码就像 main 方法， 通过定义好的一些根节点， 访问这个对象图。 在 Dagger2 中， 这些根节点由一个拥有一些没有参数且返回需要的类型的方法构成的接口所定义。 </p>
+<p>通过 @Component 标注这样的接口， 并将一些 module 类赋值给 @Component 注解的 modules 参数， Dagger2 会依据这些接口来生成它们的实现类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>(modules = DripCoffeeModule。<span class="class"><span class="keyword">class</span>)</span></span><br><span class="line"><span class="class"><span class="title">interface</span> <span class="title">CoffeeShop</span> </span>&#123;</span><br><span class="line">  <span class="function">CoffeeMaker <span class="title">maker</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现类的类名是接口名称加上 “Dagger” 的后缀， 调用它的 builder() 静态方法， 使用其返回的建造者实例， 设置依赖， 再调用 build() 来构建一个新的实例。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CoffeeShop coffeeShop = DaggerCoffeeShop。builder()</span><br><span class="line">    .dripCoffeeModule(<span class="keyword">new</span> DripCoffeeModule())</span><br><span class="line">    .build();</span><br></pre></td></tr></table></figure>
+<p>提示: 如果 @Component 标记的类不是顶层类(是一个内部类)， 那么生成的实现类名将带上它的外部类名， 使用下划线分隔开。 例如:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Bar</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Component</span></span><br><span class="line">    <span class="class"><span class="keyword">interface</span> <span class="title">BazComponent</span> </span>&#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>生成的类名是 DaggerFoo_Bar_BazComponent<br>任何一个自带可访问默认构造器的 module 类， 会被禁用， 由其建造方法取代:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CoffeeShop coffeeShop = DaggerCoffeeShop.create();</span><br></pre></td></tr></table></figure>
+<p>对于一个所有的 @Provides 的方法都是静态的 module 类， 就无需构造它的实例; 如果所有的依赖都无需由用户创建， 那么实现类依然会提供 create() 方法， 可用于获取实例</p>
+<p>然后就可以很方便的使用 Dagger 生成的实现来获取一个完全配置并可用的实例:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CoffeeApp</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    CoffeeShop coffeeShop = DaggerCoffeeShop.create();</span><br><span class="line">    coffeeShop.maker().brew();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在对象图中绑定"><a href="#在对象图中绑定" class="headerlink" title="在对象图中绑定"></a>在对象图中绑定</h3><p>上面的例子演示了如何使用一些典型的绑定构造一个 component， 但还有多种机制来形成向对象图的绑定; 下面的内容可以作为依赖和生成完整格式的 component:</p>
+<ul>
+<li>通过 @Component.modules 或 @Module.includes 直接引用的 Module 类声明的 @Provides 方法</li>
+<li>拥有一个 @Inject 注解的构造器的类， 没有限制作用域， 或者有一个 @Scope 注解且对应着 component</li>
+<li>component 依赖的组件提供方法</li>
+<li>component 本身</li>
+<li>所有包含的 subcomponent 的不符合的建造器</li>
+<li>以上绑定的 Provider 或懒加载包装器</li>
+<li>任何类型的 MembersInjector</li>
+</ul>
+<h3 id="单例和作用域绑定"><a href="#单例和作用域绑定" class="headerlink" title="单例和作用域绑定"></a>单例和作用域绑定</h3><p>使用 @Singleton 注解一个 @Provides 注解的方法或可以注入的类， 对象图会对其客户端使用单例模式:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Provides</span> <span class="meta">@Singleton</span> <span class="function"><span class="keyword">static</span> Heater <span class="title">provideHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>标记在可注入的类上的 @Singleton 注解也可以作为文档注解。 提醒了维护者这个类可能共享在多个线程。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Singleton</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CoffeeMaker</span> </span>&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于 Dagger2 关联了对象图定义了作用域的实例与 component 的实现实例， components 需要声明它们所代表的作用域。 例如在一个 component 中使用了一个单例模式的绑定， 又使用了另外某个作用域绑定， 这就没有意义了。 因为这些作用域拥有不同的生命周期并因此处在不同的拥有不同生命周期的 component。 声明一个关联了指定的作用域的 component， 只要添加一个 @Scope 注解。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>(modules = DripCoffeeModule.class)</span><br><span class="line"><span class="meta">@Singleton</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">CoffeeShop</span> </span>&#123;</span><br><span class="line">  <span class="function">CoffeeMaker <span class="title">maker</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="懒注入"><a href="#懒注入" class="headerlink" title="懒注入"></a>懒注入</h3><p>有时候你需要一个类延迟实例化， 比如一个 T 类型的绑定， 你可以使用 Lazy<t> 类型， 推迟实例化直到 Lazy<t> 的 get 方法被调用。 如果 T 是单例， 那么在对象图中， 所有的注入的地方获取的都是同一个对象， 否则每个注入都会获取自己的实例。 之后对于每个指定 Lazy<t> 调用 get 方法都会返回同样的 T 实例:</t></t></t></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GridingCoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> Lazy&lt;Grinder&gt; lazyGrinder;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">brew</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (needsGrinding()) &#123;</span><br><span class="line">      <span class="comment">// Grinder created once on first call to .get() and cached。</span></span><br><span class="line">      lazyGrinder.get().grind();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="提供器注入"><a href="#提供器注入" class="headerlink" title="提供器注入"></a>提供器注入</h3><p>有时候你需要多个实例而不是仅仅一个值， 这时候你也许有多种选择， 例如工厂， 建造者等等。 一个选择就是注入 Provider<t> 类型而不是 T， 每当 get 方法被调用， 它都会会调用绑定逻辑。 如果绑定逻辑是使用 @Inject 注解构造器， 新的实例会被构造， 但是一个 @Provides 注解的方法并不能确保是这样。 </t></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BigCoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> Provider&lt;Filter&gt; filterProvider;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">brew</span><span class="params">(<span class="keyword">int</span> numberOfPots)</span> </span>&#123;</span><br><span class="line">  		...</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> p = <span class="number">0</span>; p &lt; numberOfPots; p++) &#123;</span><br><span class="line">      maker.addFilter(filterProvider.get()); <span class="comment">//new filter every time。</span></span><br><span class="line">      maker.addCoffee(...);</span><br><span class="line">      maker.percolate();</span><br><span class="line">      ...</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>提示: 注入 Provider<t> 类型会导致一些令人迷惑的代码， 并在你的对象图中有些混淆作用域和架构的意思。 经常的你会希望使用工厂， Lazy<t> 或重新组织了你的代码的生命期和结构， 以使得可以注入一个类型 T。 但有些场景下 Provider<t> 也会成为你的救命稻草。 一个通常的用法就是当你必须要用一个陈旧的架构， 并没有按你的对象的本来的生命周期规整。 比如 servlet 设计就是单例， 但仅在请求域中是有效的。 </t></t></t></p>
+<h3 id="标识器-Qualifiers"><a href="#标识器-Qualifiers" class="headerlink" title="标识器 Qualifiers"></a>标识器 Qualifiers</h3><p>有时一个单独的类不足以识别一个依赖。 比如一个成熟的咖啡机 app 也许为了加热水和加热盘子， 会需要不同的 Heater 对象。<br>在这样的场景下， 我们添加了标识器(qualifier)注解。 任何注解都可以拥有一个 @Qualifier 注解， 下面是 @Named 注解的声明， 一个包含在 javax.inject 中的标识器注解:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Qualifier</span></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Named &#123;</span><br><span class="line">  <span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> ""</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>你可以创建自己的标识器注解， 或者也可以用 @Named。 可以注解成员变量或参数。 类型和标识器注解共同标记一个依赖:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExpensiveCoffeeMaker</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Inject</span> <span class="meta">@Named</span>(<span class="string">"water"</span>) Heater waterHeater;</span><br><span class="line">  <span class="meta">@Inject</span> <span class="meta">@Named</span>(<span class="string">"hot plate"</span>) Heater hotPlateHeater;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>设置标识器的值并设置在 @Provides 注解的方法上:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Provides</span> <span class="meta">@Named</span>(<span class="string">"hot plate"</span>) <span class="function"><span class="keyword">static</span> Heater <span class="title">provideHotPlateHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater(<span class="number">70</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Provides</span> <span class="meta">@Named</span>(<span class="string">"water"</span>) <span class="function"><span class="keyword">static</span> Heater <span class="title">provideWaterHeater</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> ElectricHeater(<span class="number">93</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>依赖可能不能拥有多个标识器注解。 </p>
+<h3 id="编译器校验"><a href="#编译器校验" class="headerlink" title="编译器校验"></a>编译器校验</h3><p>Dagger 注解处理机制是严格的， 并且当出现无效或不完整的绑定会报编译错误。 例如这个 module 装载在一个缺少 Executor 的绑定的 component :</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Module</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DripCoffeeModule</span> </span>&#123;</span><br><span class="line">  <span class="meta">@Provides</span> <span class="function"><span class="keyword">static</span> Heater <span class="title">provideHeater</span><span class="params">(Executor executor)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> CpuHeater(executor);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译期会报异常:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[ERROR] COMPILATION ERROR :</span><br><span class="line">[ERROR] error: java.util.concurrent Executor cannot be provided without an <span class="meta">@Provides</span>-annotated method。</span><br></pre></td></tr></table></figure>
+<p>解决这个错误只要在 component 下添加一个 @Provides 注解的返回类型是 Executor 的方法。 @Inject， @Module 和 @Provides 这些注解都会独立验证， 所有绑定关系的验证都发生在 component 层级上。 Dagger 1 是依靠在 Module 层级上的严格验证， 但是 Dagger 2 为了更完整的对象图层面上的验证， 省略了这些过程。</p>
+<h3 id="编译器代码生成"><a href="#编译器代码生成" class="headerlink" title="编译器代码生成"></a>编译器代码生成</h3><p>Dagger 的注解处理机会自动生成一些命名诸如 CoffeeMaker_Factory.java 或者 CoffeeMaker_MembersInjector.java 的源代码文件， 这些文件就是 Dagger 实现的细节。 你不需要直接使用它， 尽管你很容易在注入的时候在其内部单步调试。 这些生成的类中， 唯一你要关心的是哪些组件名加上 “Dagger” 前缀的哪些类。</p>
+<h3 id="在构建中使用-Dagger2"><a href="#在构建中使用-Dagger2" class="headerlink" title="在构建中使用 Dagger2"></a>在构建中使用 Dagger2</h3><p>你需要在你的项目环境中引入 dagger-2.0.jar。 为了能够实现生成代码的功能， 还需要在编译环境下引入 dagger-compiler-2.0.jar。</p>
+<p>在一个 Maven 项目中:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">  &lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.google.dagger&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;dagger&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.0&lt;/version&gt;</span><br><span class="line">  &lt;/dependency&gt;</span><br><span class="line">  &lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.google.dagger&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;dagger-compiler&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.0&lt;/version&gt;</span><br><span class="line">    &lt;optional&gt;true&lt;/optional&gt;</span><br><span class="line">  &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/12/2017年计划/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/12/2017年计划/" itemprop="url">2017年计划</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-12T15:25:41+08:00">
+                2017-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计划/" itemprop="url" rel="index">
+                    <span itemprop="name">计划</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/12/2017年计划/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/12/2017年计划/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="2017个人计划"><a href="#2017个人计划" class="headerlink" title="2017个人计划"></a>2017个人计划</h3><p>关于2017年种种原因，有了充足的时间来学习各种知识，那么在今年上半年中，任务相当繁重。</p>
+<ul>
+<li>4月份：掌握 Spring全面的知识</li>
+<li>5月份：掌握 Myibatis全面知识</li>
+<li>6月份：看情况学习，PHP相关知识</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/10/Spring-Bean的生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/01/10/Spring-Bean的生命周期/" itemprop="url">Spring-Bean的生命周期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-10T10:31:20+08:00">
+                2017-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/spring/" itemprop="url" rel="index">
+                    <span itemprop="name">spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/01/10/Spring-Bean的生命周期/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/10/Spring-Bean的生命周期/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BeanFactory中bean的生命周期"><a href="#BeanFactory中bean的生命周期" class="headerlink" title="BeanFactory中bean的生命周期"></a>BeanFactory中bean的生命周期</h3><p><img src="/images/beanfactory.png" alt=""></p>
+<h5 id="各种接口方法分类"><a href="#各种接口方法分类" class="headerlink" title="各种接口方法分类"></a>各种接口方法分类</h5><p>Bean的完整生命周期经历了各种方法调用，这些方法可以划分为以下几类：</p>
+<h6 id="1、Bean自身的方法"><a href="#1、Bean自身的方法" class="headerlink" title="1、Bean自身的方法"></a>1、Bean自身的方法</h6><p>包括了Bean本身调用的方法和通过配置文件中<bean>的init-method和destroy-method指定的方法</bean></p>
+<h6 id="2、Bean级生命周期接口方法"><a href="#2、Bean级生命周期接口方法" class="headerlink" title="2、Bean级生命周期接口方法"></a>2、Bean级生命周期接口方法</h6><p>包括了BeanNameAware、BeanFactoryAware、InitializingBean和DiposableBean这些接口的方法</p>
+<h6 id="3、容器级生命周期接口方法"><a href="#3、容器级生命周期接口方法" class="headerlink" title="3、容器级生命周期接口方法"></a>3、容器级生命周期接口方法</h6><p>包括了InstantiationAwareBeanPostProcessor 和 BeanPostProcessor 这两个接口实现，一般称它们的实现类为“后处理器”</p>
+<p>InstantiationAwareBeanPostProcessor 接口本质是BeanPostProcessor的子接口，一般我们继承Spring为其提供的适配器类InstantiationAwareBeanPostProcessorAdapter来使用它</p>
+<h3 id="Application中bean的生命周期"><a href="#Application中bean的生命周期" class="headerlink" title="Application中bean的生命周期"></a>Application中bean的生命周期</h3><p><img src="/images/application.png" alt=""></p>
+<p>同beanFactory中bean的生命周期的区别在于</p>
+<h6 id="1、Bean级生命周期接口方法"><a href="#1、Bean级生命周期接口方法" class="headerlink" title="1、Bean级生命周期接口方法"></a>1、Bean级生命周期接口方法</h6><p>除了包括了BeanNameAware、BeanFactoryAware、InitializingBean和DiposableBean这些接口的方法，多加了ApplicationContextAware接口</p>
+<h6 id="2、工厂后处理器接口方法"><a href="#2、工厂后处理器接口方法" class="headerlink" title="2、工厂后处理器接口方法"></a>2、工厂后处理器接口方法</h6><p>包括了BeanFactoryPostProcessor或者CustomEditonConfiurer, PropertyPlaceholderConfigurer等等非常有用的工厂后处理器接口的方法。工厂后处理器也是容器级的。在应用上下文装配配置文件之后调用一次。</p>
+<p>如果配置文件中定义了多个工厂后处理器，最后让他们实现Ordered接口，以便Spring确定调用他们的顺序。</p>
+<blockquote>
+<p>ApplicationContext和BeanFactory另一个最大的不同之处在于：<br>ApplicationContext会利用Java反射机制自动识别出配置文件中定义的<br>BeanPostProcessor，InstantiationAwareBeanPostProcessor和<br>BeanFactoryPostProcessor，并自动将他们注册到应用上下文中；而<br>BeanFactory需要在代码中通过手工调用addBeanPostProcessor()方法&gt; 进行注册。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/07/JSP-EL表达式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/07/JSP-EL表达式/" itemprop="url">JSP-EL表达式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-07T16:07:22+08:00">
+                2016-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JSP/" itemprop="url" rel="index">
+                    <span itemprop="name">JSP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/12/07/JSP-EL表达式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/07/JSP-EL表达式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="1）语法结构"><a href="#1）语法结构" class="headerlink" title="1）语法结构"></a>1）语法结构</h4><pre><code>${expression}
+</code></pre><h4 id="2）-与-运算符"><a href="#2）-与-运算符" class="headerlink" title="2）[]与.运算符"></a>2）[]与.运算符</h4><p>EL 提供.和[]两种运算符来存取数据。</p>
+<p>当要存取的属性名称中包含一些特殊字符，如.或?等并非字母或数字的符号，就一定要使用 []。例如：</p>
+<pre><code>${user.My-Name}应当改为${user[&quot;My-Name&quot;] }
+</code></pre><p>如果要动态取值时，就可以用[]来做，而.无法做到动态取值。例如：</p>
+<pre><code>${sessionScope.user[data]}中data 是一个变量
+</code></pre><h4 id="3）变量"><a href="#3）变量" class="headerlink" title="3）变量"></a>3）变量</h4><p>EL存取变量数据的方法很简单，例如：${username}。它的意思是取出某一范围中名称为username的变量。</p>
+<p>因为我们并没有指定哪一个范围的username，所以它会依序从Page、Request、Session、Application范围查找。</p>
+<p>假如途中找到username，就直接回传，不再继续找下去，但是假如全部的范围都没有找到时，就回传null。</p>
+<p>属性范围在EL中的名称</p>
+<pre><code>Page            PageScope
+Request         RequestScope
+Session         SessionScope
+Application     ApplicationScope
+</code></pre><h4 id="4）11内置对象"><a href="#4）11内置对象" class="headerlink" title="4）11内置对象"></a>4）11内置对象</h4><blockquote>
+<p>pageScope : 用于获取page范围的属性值。</p>
+<p>requestScope : 用于获取request范围的属性值。</p>
+<p>sessionScope : 用于获取session范围的属性值。</p>
+<p>applicationScope : 用于获取application范围的属性值。</p>
+<p>param : 用于获取请求的参数值。该内置对象的类型是Map&lt;String,String&gt;，可以用来获取值为单值的请求参数，其中key指的是请求参数的名称，value指的是请求参数的值，使用param获取请求参数与request.getParameter()方法一样。</p>
+<p>paramValues : 用于获取请求的参数值。与param区别在于，该对象用于获取属性值为数组的属性值。该内置对象的类型Map&lt;String,String[]&gt;，可以用来获取值为多值的请求参数，其中key是参数名，value是多个参数值组成的字符串数组。</p>
+<p>header : 用于获取请求头的属性值。该内置对象的类型是Map&lt;String,String&gt;。用法${header.key}</p>
+<p>headerValues : 用于获取请求头的属性值。与header区别在于，该对象用于获取属性值为数组的属性值。该内置对象的类型是Map&lt;String,String[]&gt;。用法${headerValues.key[0…]}</p>
+<p>initParam : 用于获取Web应用的初始化参数。</p>
+<p>cookie : 用于获取指定的cookie值。该内置对象的类型为Map&lt;String,Cookie&gt;。用法${cookie.key}可以获得cookie对象本身<br>然后获得通过cookie.value获得cookie里面存储的value，简化方法<br>${cookie.key.value}。</p>
+<p>pageContext : 代表该页面的pageContext对象，与JSP的pageContext内置对象相同。用法${pageContext.request}，类似pageContext.getRequest()方法，返回一个request对象。用法二${pageContext.request.contextPath}，获取当前工程的名字。</p>
+<blockquote>
+<p>当然，使用pageContext内置对象还可以获取session对象的id值，如：${pageContext.session.id}。pageContext对象可以获取jsp的其他内置对象，所以通过pageContext对象可以获取其他内置对象的任意的属性值。</p>
+</blockquote>
+</blockquote>
+<h4 id="5）EL表达式的自定义函数"><a href="#5）EL表达式的自定义函数" class="headerlink" title="5）EL表达式的自定义函数"></a>5）EL表达式的自定义函数</h4><p><strong>此方法可参考JSP自定义标签文档中例子</strong></p>
+<p>步骤</p>
+<p>1.开发函数处理类，函数处理类就是普通类，这个普通类包含若干个静态方法，每个静态方法都可以定义成一个函数。</p>
+<p>2.使用标签库定义函数，定义函数的方法与定义标签的方法大致相似。在&lt;taglib../&gt;元素下增加&lt;function../&gt;元素用于定义自定义函数。</p>
+<p>&lt;function../&gt;子元素</p>
+<blockquote>
+<p>name:指定自定义函数的名称</p>
+<p>funciton-class:指定自定义函数的处理类</p>
+<p>funciton-signature:指定自定义函数对应的方法。  </p>
+</blockquote>
+<p>代码如下：</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;GBK&quot;?&gt;
+&lt;taglib xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee 
+    web-jsptaglibrary_2_0.xsd&quot; version=&quot;2.0&quot;&gt;
+    &lt;tlib-version&gt;1.0&lt;/tlib-version&gt;
+    &lt;short-name&gt;crazyit&lt;/short-name&gt;
+    &lt;!-- 定义该标签库的URI --&gt;
+    &lt;uri&gt;http://www.crazyit.org/tags&lt;/uri&gt;
+    &lt;!-- 定义第一个函数 --&gt;
+    &lt;function&gt;
+        &lt;!-- 定义函数名:reverse --&gt;
+        &lt;name&gt;reverse&lt;/name&gt;
+        &lt;!-- 定义函数的处理类 --&gt;
+        &lt;function-class&gt;lee.Functions&lt;/function-class&gt;
+        &lt;!-- 定义函数的实现方法--&gt;
+        &lt;function-signature&gt;
+            java.lang.String reverse(java.lang.String)&lt;/function-signature&gt;
+    &lt;/function&gt;
+    &lt;!-- 定义第二个函数: countChar --&gt;
+    &lt;function&gt;
+        &lt;!-- 定义函数名:countChar --&gt;
+        &lt;name&gt;countChar&lt;/name&gt;
+        &lt;!-- 定义函数的处理类 --&gt;
+        &lt;function-class&gt;lee.Functions&lt;/function-class&gt;
+        &lt;!-- 定义函数的实现方法--&gt;
+        &lt;function-signature&gt;int countChar(java.lang.String)
+            &lt;/function-signature&gt;
+    &lt;/function&gt;
+&lt;/taglib&gt;
+</code></pre><p>调用代码如下：</p>
+<pre><code>......
+&lt;%@ taglib prefix=&quot;crazyit&quot; uri=&quot;http://www.crazyit.org/tags&quot;%&gt;
+......
+    &lt;table border=&quot;1&quot; bgcolor=&quot;aaaadd&quot;&gt;
+        &lt;tr&gt;
+        &lt;td&gt;&lt;b&gt;表达式语言&lt;/b&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;b&gt;计算结果&lt;/b&gt;&lt;/td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${param[&quot;name&quot;]}&lt;/td&gt;
+            &lt;td&gt;${param[&quot;name&quot;]}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!--  使用reverse函数--&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:reverse(param[&quot;name&quot;])}&lt;/td&gt;
+            &lt;td&gt;${crazyit:reverse(param[&quot;name&quot;])}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:reverse(crazyit:reverse(param[&quot;name&quot;]))}&lt;/td&gt;
+            &lt;td&gt;${crazyit:reverse(crazyit:reverse(param[&quot;name&quot;]))}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!-- 使用countChar函数 --&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\${crazyit:countChar(param[&quot;name&quot;])}&lt;/td&gt;
+            &lt;td&gt;${crazyit:countChar(param[&quot;name&quot;])}&amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+......
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/07/JSP自定义标签/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/07/JSP自定义标签/" itemprop="url">JSP自定义标签</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-07T13:56:01+08:00">
+                2016-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JSP/" itemprop="url" rel="index">
+                    <span itemprop="name">JSP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/12/07/JSP自定义标签/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/07/JSP自定义标签/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JSP自定义标签"><a href="#JSP自定义标签" class="headerlink" title="JSP自定义标签"></a>JSP自定义标签</h1><hr>
+<h3 id="JSP自定义标签一："><a href="#JSP自定义标签一：" class="headerlink" title="JSP自定义标签一："></a>JSP自定义标签一：</h3><p>JSP自定义标签分为三步</p>
+<blockquote>
+<p>1.开发自定义标签处理类；</p>
+<p>2.建立一个*.tld文件，每个*.tld文件对应一个标签库，每个标签库可包含多个标签；</p>
+<p>3.在JSP文件中使用自定义标签；</p>
+</blockquote>
+<p>首先我们需要大致了解开发自定义标签所涉及到的接口与类的层次结构(其中SimpleTag接口与SimpleTagSupport类是JSP2.0中新引入的)。</p>
+<p><img src="/images/2011122517261812.png" alt=""></p>
+<p>####1.1开发自定义标签类</p>
+<p>自定义标签类应该继承一个父类：SimpleTagSupport类</p>
+<blockquote>
+<p>如果标签类包含属性，每个属性都要有对应的getter和setter方法</p>
+</blockquote>
+<blockquote>
+<p>重写doTag()方法，这个方法负责生成页面内容。</p>
+</blockquote>
+<pre><code>public class HelloWordTag extends SimpleTagSupport
+{
+    //重写doTag方法，该方法负责生成页面内容
+    public void daTag() throws JspException,IOException
+    {
+        //获取页面输出流，并输出字符串
+        getJspContext().getOut().write(&quot;Hello Word!&quot;);
+    }
+}
+</code></pre><p>####1.2建立TLD文件</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;GBK&quot;?&gt;
+&lt;taglib xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot;
+        xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+        xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd&quot;
+        version=&quot;2.0&quot;&gt;
+    &lt;tlib-version&gt;1.0&lt;/tlib-version&gt;
+    &lt;short-name&gt;mytaglib&lt;/short-name&gt;
+    &lt;!-- 定义该标签库的URI --&gt;
+    &lt;uri&gt;http://www.crazyit.org/mytaglib&lt;/uri&gt;
+
+    &lt;!-- 定义第一个标签 --&gt;
+    &lt;tag&gt;
+        &lt;!-- 定义标签名 --&gt;
+        &lt;name&gt;helloWorld&lt;/name&gt;
+        &lt;!-- 定义标签处理类 --&gt;
+        &lt;tag-class&gt;lee.HelloWorldTag&lt;/tag-class&gt;
+        &lt;!-- 定义标签体为空 --&gt;
+        &lt;body-content&gt;empty&lt;/body-content&gt;
+    &lt;/tag&gt;
+
+    &lt;!-- 定义第二个标签 --&gt;
+    &lt;tag&gt;
+        &lt;!-- 定义标签名 --&gt;
+        &lt;name&gt;query&lt;/name&gt;
+        &lt;!-- 定义标签处理类 --&gt;
+        &lt;tag-class&gt;lee.QueryTag&lt;/tag-class&gt;
+        &lt;!-- 定义标签体为空 --&gt;
+        &lt;body-content&gt;empty&lt;/body-content&gt;
+        &lt;!-- 配置标签属性:driver --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;driver&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+        &lt;!-- 配置标签属性:url --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;url&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+        &lt;!-- 配置标签属性:user --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;user&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+        &lt;!-- 配置标签属性:pass --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;pass&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+        &lt;!-- 配置标签属性:sql --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;sql&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+    &lt;/tag&gt;
+
+    &lt;!-- 定义第三个标签 --&gt;
+    &lt;tag&gt;
+        &lt;!-- 定义标签名 --&gt;
+        &lt;name&gt;iterator&lt;/name&gt;
+        &lt;!-- 定义标签处理类 --&gt;
+        &lt;tag-class&gt;lee.IteratorTag&lt;/tag-class&gt;
+        &lt;!-- 定义标签体不允许出现JSP脚本 --&gt;
+        &lt;body-content&gt;scriptless&lt;/body-content&gt;
+        &lt;!-- 配置标签属性:collection --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;collection&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+        &lt;!-- 配置标签属性:item --&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;item&lt;/name&gt; 
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+    &lt;/tag&gt;
+
+    &lt;!-- 定义接受动态属性的标签 --&gt;
+    &lt;tag&gt;
+        &lt;name&gt;dynaAttr&lt;/name&gt;
+        &lt;tag-class&gt;lee.DynaAttributesTag&lt;/tag-class&gt;
+        &lt;body-content&gt;empty&lt;/body-content&gt;
+        &lt;!-- 指定支持动态属性 --&gt;
+        &lt;dynamic-attributes&gt;true&lt;/dynamic-attributes&gt;
+    &lt;/tag&gt;
+
+    &lt;tag&gt;
+        &lt;name&gt;fragment&lt;/name&gt;
+        &lt;tag-class&gt;lee.FragmentTag&lt;/tag-class&gt;
+        &lt;body-content&gt;empty&lt;/body-content&gt;
+        &lt;attribute&gt;
+            &lt;name&gt;fragment&lt;/name&gt;
+            &lt;required&gt;true&lt;/required&gt;
+            &lt;fragment&gt;true&lt;/fragment&gt;
+        &lt;/attribute&gt;
+    &lt;/tag&gt;
+&lt;/taglib&gt;
+</code></pre><p>调用方法如下：</p>
+<pre><code>&lt;h2&gt;下面显示的是自定义标签中的内容&lt;/h2&gt;
+&lt;!-- 使用标签 ，其中mytag是标签前缀，根据taglib的编译指令，mytag前缀将由http://www.crazyit.org/mytaglib的标签库处理 --&gt;
+&lt;mytag:helloWorld/&gt;&lt;br/&gt;
+</code></pre><p>taglib下的子元素</p>
+<blockquote>
+<p>Element：Description</p>
+<p>tlib-version：Tag库的版本</p>
+<p>jsp-version：Tag库所需要的jsp的版本</p>
+<font color="red">short-name：助记符，tag的一个别名（可选）</font>
+
+<font color="red">uri：用于确定一个唯一的tag库(重要)</font>
+
+<p>display-name：被可视化工具（诸如Jbuilder）用来显示的名称（可选）</p>
+<p>small-icon：被可视化工具（诸如Jbuilder）用来显示的小图标（可选）</p>
+<p>large-icon：被可视化工具（诸如Jbuilder）用来显示的大图标（可选）</p>
+<p>description：对tag库的描述（可选）</p>
+<p>listener：一个tag库可能定义一些类做为它的事件侦听类，这些类在TLD中被称为listener 元素，jsp服务器将会实例化这些侦听类，并且注册它们。Listener元素中有一个叫listener-class的子元素，这个元素的值必须是该侦听类的完整类名。</p>
+<p>tag：参见下面tag 元素</p>
+</blockquote>
+<p>tag元素下子元素</p>
+<blockquote>
+<font color="red"> name：该标签库的名称，JSP页面中就是根据这个名称来使用此标签。(重要)</font>
+
+<font color="red">tag-class：Tag标签对应的tag处理类(重要)</font>
+
+<p>tei-class：javax.servlet.jsp.tagext.TagExtraInfo的子类，用于表达脚本变量（可选）</p>
+<font color="red">body-content：Tag标签body的类型，指定标签体的内容，可以是如下几个(重要)</font><br>&gt; tagdependent-指定标签处理类自己负责处理标签体<br><br>&gt; empty-指定该标签体为空，只能作为空标签使用<br><br>&gt; scriptless-指定该标签体可以试静态HTML元素，表达式语言，但不允许出现JSP脚本<br><br>&gt; JSP-指定该标签的标签体可以使用JSP脚本<br><br>&gt; dynamic-attributes-指定该标签是否支持动态属性，只有当定义动态属性标签时才需要该子元素’(重要)
+
+<p>display-name：被可视化工具（诸如Jbuilder）用来显示的名称（可选）</p>
+<p>small-icon：被可视化工具（诸如Jbuilder）用来显示的小图标（可选）</p>
+<p>large-icon：被可视化工具（诸如Jbuilder）用来显示的大图标（可选）</p>
+<p>description：此tag标签的描述</p>
+<p>variable：提供脚本变量的信息（同tei-class）(可选)</p>
+<p><font color="red">attribute：Tag标签的属性名,有如下子元素(重要)</font></p>
+<blockquote>
+<p>name : 设置属性名，子元素的值是字符串内容。</p>
+</blockquote>
+<blockquote>
+<p>required : 设置该属性是否为必须属性，该子元素的值是true或false。</p>
+</blockquote>
+<blockquote>
+<p>fragment : 设置该属性是否支持JSP脚本，表达式等动态内容，子元素的值是true或false。</p>
+</blockquote>
+</blockquote>
+<h4 id="1-3使用标签库"><a href="#1-3使用标签库" class="headerlink" title="1.3使用标签库"></a>1.3使用标签库</h4><p>1.使用taglib编译指令导入标签库。</p>
+<p>2.使用标签，在JSP页面中使用自定义标签。</p>
+<p>引入自定义标签语法如下</p>
+<pre><code>&lt;%@ taglib uri=&quot;tagliburi&quot; prefix=&quot;tagPrefix&quot;%&gt;
+</code></pre><p>使用自定义标签语法如下</p>
+<pre><code>&lt;tagPrefix:tagName tagAttribute=&quot;tagValue&quot; ...&gt;
+    &lt;tagBody/&gt;
+&lt;/tagPrefix:tagName&gt;
+
+&lt;!--没有标签体的--&gt;
+&lt;tagPrefix:tagName tagAttribute=&quot;tagValue&quot; .../&gt;
+</code></pre><h6 id="带属性的标签调用方法如下"><a href="#带属性的标签调用方法如下" class="headerlink" title="带属性的标签调用方法如下"></a>带属性的标签调用方法如下</h6><pre><code>&lt;h2&gt;下面显示的是查询标签的结果&lt;/h2&gt;
+&lt;!-- 使用标签 ，其中mytag是标签前缀，根据taglib的编译指令，mytag前缀将由http://www.crazyit.org/mytaglib的标签库处理 --&gt;
+&lt;mytag:query
+    driver=&quot;com.mysql.jdbc.Driver&quot;
+    url=&quot;jdbc:mysql://localhost:3306/javaee&quot;
+    user=&quot;root&quot;
+    pass=&quot;32147&quot;
+    sql=&quot;select * from news_inf&quot;/&gt;&lt;br/&gt;
+</code></pre><h6 id="带有标签体的处理类"><a href="#带有标签体的处理类" class="headerlink" title="带有标签体的处理类"></a>带有标签体的处理类</h6><pre><code>//省略了其他内容
+......
+
+//标签的处理方法，简单标签处理类只需要重写doTag方法
+public void doTag() throws JspException, IOException
+{
+    //从page scope中获取属性名为collection的集合
+    Collection itemList = (Collection)getJspContext().
+        getAttribute(collection);
+    //遍历集合
+    for (Object s : itemList)
+    {
+        //将集合的元素设置到page 范围
+        getJspContext().setAttribute(item, s );
+        //输出标签体
+        getJspBody().invoke(null);
+    }
+}
+
+......
+</code></pre><p>上面代码每次遍历都调用了getJspBody()方法，该方法返回该标签所包含的标签体：JspFragment对象，执行该对象的invoke()方法，即可输出标签体内容。</p>
+<h6 id="以页面片段作为属性的标签"><a href="#以页面片段作为属性的标签" class="headerlink" title="以页面片段作为属性的标签"></a>以页面片段作为属性的标签</h6><blockquote>
+<p>标签处理类中定义了类型为JspFragment的属性，该属性代表了‘页面片段’。</p>
+</blockquote>
+<blockquote>
+<p>使用标签库时，通过<a href="jsp:attribute../" target="_blank" rel="noopener">jsp:attribute../</a>动作指令为标签库属性指定值。</p>
+</blockquote>
+<p>参考如下代码</p>
+<pre><code>public class FragmentTag extends SimpleTagSupport 
+{
+    private JspFragment fragment;
+
+    //fragment属性的setter和getter方法
+    public void setFragment(JspFragment fragment)
+    {
+        this.fragment = fragment;
+    }
+    public JspFragment getFragment()
+    {
+        return this.fragment;
+    }
+    @Override
+    public void doTag() throws JspException, IOException
+    {
+        JspWriter out = getJspContext().getOut();
+        out.println(&quot;&lt;div style=&apos;padding:10px;border:1px solid black&apos;&gt;&quot;);
+        out.println(&quot;&lt;h3&gt;下面是动态传入的JSP片段&lt;/h3&gt;&quot;);
+        //调用、输出“页面片段”
+        fragment.invoke( null );
+        out.println(&quot;&lt;/div&quot;);
+    }
+}
+</code></pre><p>tld文件如下</p>
+<pre><code>......
+&lt;tag&gt;
+    &lt;!--定义标签名--&gt;
+    &lt;name&gt;fragment&lt;/name&gt;
+    &lt;!--定义标签处理类--&gt;
+    &lt;tag-class&gt;lee.FragmentTag&lt;/tag-class&gt;
+    &lt;!--指定该标签不支持标签体--&gt;
+    &lt;body-content&gt;empty&lt;/body-content&gt;
+    &lt;attribute&gt;
+        &lt;name&gt;fragment&lt;/name&gt;
+        &lt;required&gt;true&lt;/required&gt;
+        &lt;fragment&gt;true&lt;/fragment&gt;
+    &lt;/attribute&gt;
+&lt;/tag&gt;
+......
+</code></pre><p>标签调用代码如下：</p>
+<pre><code>......
+&lt;h2&gt;下面显示的是自定义标签中的内容&lt;/h2&gt;
+&lt;mytag:fragment&gt;
+    &lt;!-- 使用jsp:attribute标签传入fragment参数 --&gt;
+    &lt;jsp:attribute name=&quot;fragment&quot;&gt;
+        &lt;!-- 下面是动态的JSP页面片段 --&gt;
+        &lt;mytag:helloWorld/&gt;
+    &lt;/jsp:attribute&gt;
+&lt;/mytag:fragment&gt;
+&lt;br/&gt;
+&lt;mytag:fragment&gt;
+    &lt;jsp:attribute name=&quot;fragment&quot;&gt;
+        &lt;!-- 下面是动态的JSP页面片段 --&gt;
+        ${pageContext.request.remoteAddr}
+    &lt;/jsp:attribute&gt;
+&lt;/mytag:fragment&gt;
+......
+</code></pre><h6 id="动态属性的标签"><a href="#动态属性的标签" class="headerlink" title="动态属性的标签"></a>动态属性的标签</h6><p>动态属性标签比普通标签多了如下两个要求</p>
+<blockquote>
+<p>标签处理类还需要实DynamicAttributes接口，实现setDynamicAttribute方法。</p>
+<p>配置标签时通过&lt;dynamic-attribute../&gt;子元素指定该标签支持动态属性。</p>
+</blockquote>
+<p>代码如下</p>
+<pre><code>public class DynaAttributesTag extends SimpleTagSupport implements DynamicAttributes
+{
+    //保存每个属性名的集合
+    private ArrayList&lt;String&gt; keys = new ArrayList&lt;String&gt;();
+    //保存每个属性值的集合
+    private ArrayList&lt;Object&gt; values = new ArrayList&lt;Object&gt;();
+
+    @Override
+    public void doTag() throws JspException, IOException
+    {
+        JspWriter out = getJspContext().getOut();
+        //此处只是简单地输出每个属性
+        out.println(&quot;&lt;ol&gt;&quot;);
+        for( int i = 0; i &lt; keys.size(); i++ )
+        {
+            String key = keys.get( i );
+            Object value = values.get( i );
+            out.println( &quot;&lt;li&gt;&quot; + key + &quot; = &quot; + value + &quot;&lt;/li&gt;&quot; );
+        }
+        out.println(&quot;&lt;/ol&gt;&quot;);
+    }
+
+    @Override
+    public void setDynamicAttribute( String uri, String localName, 
+        Object value ) 
+        throws JspException
+    {
+        //添加属性名
+        keys.add( localName );
+        //添加属性值
+        values.add( value );
+    }
+}
+</code></pre><p>tld文件如下：</p>
+<pre><code>&lt;!-- 定义接受动态属性的标签 --&gt;
+&lt;tag&gt;
+    &lt;name&gt;dynaAttr&lt;/name&gt;
+    &lt;tag-class&gt;lee.DynaAttributesTag&lt;/tag-class&gt;
+    &lt;body-content&gt;empty&lt;/body-content&gt;
+    &lt;!-- 指定支持动态属性 --&gt;
+    &lt;dynamic-attributes&gt;true&lt;/dynamic-attributes&gt;
+&lt;/tag&gt;
+</code></pre><p>调用方法如下：</p>
+<pre><code>&lt;h2&gt;下面显示的是自定义标签中的内容&lt;/h2&gt;
+&lt;h4&gt;指定两个属性&lt;/h4&gt;
+&lt;mytag:dynaAttr name=&quot;crazyit&quot; url=&quot;crazyit.org&quot;/&gt;&lt;br/&gt;
+&lt;h4&gt;指定四个属性&lt;/h4&gt;
+&lt;mytag:dynaAttr 书名=&quot;疯狂Java讲义&quot; 价格=&quot;99.0&quot; 出版时间=&quot;2008年&quot; 描述=&quot;Java图书&quot;/&gt;&lt;br/&gt;
+</code></pre><p><br></p>
+<hr>
+<h3 id="JSP自定义标签二："><a href="#JSP自定义标签二：" class="headerlink" title="JSP自定义标签二："></a>JSP自定义标签二：</h3><p>通过定义.tag文件定义标签</p>
+<p>使用tag file无需定义标签处理类和tld文件，命名规则需要问tagName.tag,其中tagName文件名即为标签名，将赶文件放在WEB应用某个路径下，这个路径相当于标签库的URI名，可以统一放在/WEB-ING/tags目录下。</p>
+<p>引入标签库的时候就可以按照 <code>&lt;%@ taglib prefix=&quot;tags&quot; tagdir=&quot;/WEB-ING/tags&quot;&gt;</code>方式来引入标签库。</p>
+<p>tag file具有如下5个编译指令</p>
+<blockquote>
+<p>taglib:用于导入其他标签库</p>
+</blockquote>
+<blockquote>
+<p>include:用于导入其他JSP或静态页面</p>
+</blockquote>
+<blockquote>
+<p>tag:作用类似于JSP文件中的page指令，有pageEncoding，body-content等属性，用于设置页面编码等属性</p>
+</blockquote>
+<blockquote>
+<p>attribute:用于设置自定义标签的属性，类似于自定义标签处理类中的标签属性。</p>
+</blockquote>
+<blockquote>
+<p>variavle:用于设置自定义标签的变量，这些变量将传给JSP页面使用。</p>
+</blockquote>
+<p>示例代码如下：</p>
+<p>文件名为iterator.tag</p>
+<pre><code>&lt;%@ tag pageEncoding=&quot;GBK&quot; import=&quot;java.util.List&quot;%&gt;
+&lt;!-- 定义了四个标签属性 --&gt;
+&lt;%@ attribute name=&quot;bgColor&quot; %&gt;
+&lt;%@ attribute name=&quot;cellColor&quot; %&gt;
+&lt;%@ attribute name=&quot;title&quot; %&gt;
+&lt;%@ attribute name=&quot;bean&quot; %&gt;
+&lt;table border=&quot;1&quot; bgcolor=&quot;${bgColor}&quot;&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;b&gt;${title}&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;%List&lt;String&gt; list = (List&lt;String&gt;)
+    request.getAttribute(&quot;a&quot;);
+//遍历输出list集合的元素
+for (Object ele : list){%>
+		<tr>
+			<td bgcolor="${cellColor}">
+			<%=ele%>
+			</%=ele%></td>
+		</tr>
+	<%}%&gt; &lt;="" table&gt;="" <="" code=""></%}%&gt;></code></pre><p>调用代码如下：</p>
+<pre><code>//使用自定义标签
+&lt;tags:iterator bgColor=&quot;#99dd99&quot; cellColor=&quot;#9999cc&quot; title=&quot;迭代器标签&quot; bean=&quot;a&quot; /&gt;
+</code></pre><p><br></p>
+<hr>
+<h3 id="EL表达式自定义函数："><a href="#EL表达式自定义函数：" class="headerlink" title="EL表达式自定义函数："></a>EL表达式自定义函数：</h3><p>该方法实际是EL表达式的自定义函数方法</p>
+<p>SUN公司的<code>&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/functions&quot; prefix=&quot;fn&quot; %&gt;</code>就是采用的这种方法，是用于在EL表达式中可以使用期定义的函数库。</p>
+<p>引入方式示例：</p>
+<pre><code>&lt;%@ taglib prefix=&quot;fns&quot; uri=&quot;/WEB-INF/tlds/fns.tld&quot; %&gt;
+</code></pre><p>代码示例：</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;taglib xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot;
+  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+  xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd&quot;
+  version=&quot;2.0&quot;&gt;
+
+  &lt;description&gt;JSTL 1.1 functions library&lt;/description&gt;
+  &lt;display-name&gt;JSTL functions sys&lt;/display-name&gt;
+  &lt;tlib-version&gt;1.1&lt;/tlib-version&gt;
+  &lt;short-name&gt;fns&lt;/short-name&gt;
+  &lt;uri&gt;http://java.sun.com/jsp/jstl/functionss&lt;/uri&gt;
+
+  &lt;!-- DictUtils --&gt;
+
+  &lt;function&gt;
+    &lt;description&gt;获取字典对象列表&lt;/description&gt;
+    &lt;name&gt;getDictList&lt;/name&gt;
+    &lt;function-class&gt;com.sdyy.base.sys.utils.DictUtils&lt;/function-class&gt;
+    &lt;function-signature&gt;java.util.List getDictList(java.lang.String)&lt;/function-signature&gt;
+    &lt;example&gt;${fns:getDictList(typeCode)}&lt;/example&gt;  
+  &lt;/function&gt;
+
+  &lt;function&gt;
+    &lt;description&gt;获取字典对象列表&lt;/description&gt;
+    &lt;name&gt;getDictListJson&lt;/name&gt;
+    &lt;function-class&gt;com.sdyy.base.sys.utils.DictUtils&lt;/function-class&gt;
+    &lt;function-signature&gt;java.lang.String getDictListJson(java.lang.String)&lt;/function-signature&gt;
+    &lt;example&gt;${fns:getDictListJson(typeCode)}&lt;/example&gt;  
+  &lt;/function&gt;
+
+
+  &lt;function&gt;
+    &lt;description&gt;对象变json&lt;/description&gt;
+    &lt;name&gt;toJSONString&lt;/name&gt;
+    &lt;function-class&gt;com.alibaba.fastjson.JSON&lt;/function-class&gt;
+    &lt;function-signature&gt;java.lang.String toJSONString(java.lang.Object)&lt;/function-signature&gt;
+  &lt;/function&gt;
+&lt;/taglib&gt;
+</code></pre><blockquote>
+<p>function-class就是该方法的实体所在类路径，</p>
+<p>function-signature就是该方法的方法名，值得一提的是，这个方法必须是个static方法。</p>
+<p>example就是使用方法示例</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/06/Spring学习一/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/06/Spring学习一/" itemprop="url">Spring学习一</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-06T15:35:26+08:00">
+                2016-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/J2EE/" itemprop="url" rel="index">
+                    <span itemprop="name">J2EE</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/12/06/Spring学习一/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/06/Spring学习一/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Spring-基础学习一"><a href="#Spring-基础学习一" class="headerlink" title="Spring 基础学习一"></a>Spring 基础学习一</h2><p>spring在J2EE中应用最多的属于WebApplicationContext类，此类是spring IOC容器ApplicaionContext的子类，专门为web应用准备，它允许从相对于web根目录的路径中装载配置文件完成初始化工作。从WebApplicationContext中可以获得ServletContext的引用，而且WebApplicationContext对象也将作为属性放到ServletContext中，可以使用WebApplicationContextUtil的getWebApplicationContext（ServletContex sc）方法获得WebApplicationContext的实例。</p>
+<pre><code>WebApplicationContext wac=（WebApplicationContext）servletContext.getAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE)；
+</code></pre><p>此方法可以从ServletContext属性中通过，WebApplicationContext类定义的常量ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE来获得相应的实例，此方法也是WebApplicationContextUtil获得Web应用上下文实例的内部实现方法。</p>
+<h3 id="WebApplicationContext初始化"><a href="#WebApplicationContext初始化" class="headerlink" title="WebApplicationContext初始化"></a>WebApplicationContext初始化</h3><p>WebApplicationContext的初始化需要ServletContext的引用，所以必须在拥有Web容器的前提下才能完成启动工作。</p>
+<p>因此可以通过定义自启动Servlet或者定义Web容器监听器来，完成WebApplicationContext的初始化工作。</p>
+<p>Spring提供了ContextLoaderServlet或者ContextLoaderListener来辅助WebApplicationContext的初始化，这两类中都实现了启动WebApplicationContext实例的逻辑，我们只需要在Web.xml中配置就可以了。</p>
+<pre><code>&lt;!--指定配置文件--&gt;
+&lt;context-param&gt;
+    &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+    &lt;param-value&gt;
+        /WEB-INF/baobaotao-dao.xml,/WEB-INF/baobaotao-service.xml
+    &lt;/param-value&gt;
+&lt;/context-param&gt;
+
+&lt;!--声明Web容器监听器--&gt;
+&lt;listener&gt;
+    &lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;
+&lt;/listener&gt;
+</code></pre><p>ContextLoaderListener通过Web容器上下文参数contextConfigLocation获取Spring配置文件位置，可以指定多个配置文件，用逗号，空格，或冒号分开均可，对于未带资源类型前缀的配置文件路径，会默认这些路径相对于Web应用部署的根路径，对于配置了资源类型前缀的路径，和上面是等效的，例如 <code>classpath*：/baobaotao-*.xml</code></p>
+<h5 id="通过自启动servlet来引导"><a href="#通过自启动servlet来引导" class="headerlink" title="通过自启动servlet来引导"></a>通过自启动servlet来引导</h5><pre><code>&lt;!--指定配置文件--&gt;
+&lt;context-param&gt;
+    &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+    &lt;param-value&gt;
+        /WEB-INF/baobaotao-dao.xml,/WEB-INF/baobaotao-service.xml
+    &lt;/param-value&gt;
+&lt;/context-param&gt;
+
+&lt;!--声明自启动Servlet--&gt;
+&lt;servlet&gt;
+    &lt;servlet-name&gt;springContextLoaderServlet&lt;/listener-class&gt;
+    &lt;servlet-class&gt;org.springframework.web.context.ContextLoaderServlet&lt;/servlet-class&gt;
+    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+&lt;/servlet&gt;
+</code></pre><hr>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/11/JSP基础学习二/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/11/JSP基础学习二/" itemprop="url">JSP基础学习二</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-11T17:47:43+08:00">
+                2016-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JSP/" itemprop="url" rel="index">
+                    <span itemprop="name">JSP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/07/11/JSP基础学习二/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/11/JSP基础学习二/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JSP基础语法学习"><a href="#JSP基础语法学习" class="headerlink" title="JSP基础语法学习"></a>JSP基础语法学习</h1><hr>
+<h2 id="JSP的3个编译指令"><a href="#JSP的3个编译指令" class="headerlink" title="JSP的3个编译指令"></a>JSP的3个编译指令</h2><table border="1" cellspacing="0"><tr><th width="30%">指令</th><th width="70%">描述</th></tr><tr><td width="30%">&lt; %@ page … % &gt;</td><td width="70%">page指令是针对当前页面的指令，比如脚本语言，错误页面和缓冲要求。</td></tr><tr><td width="30%">&lt; %@ include  … % &gt;</td><td width="70%">include指令用于指定包含另一个页面</td></tr><td width="30%">&lt; %@ taglib   … % &gt;</td><td width="70%">taglib指令用于定义和访问自定义标签</td></table>  
+
+
+
+<h4 id="1-Page编译指令"><a href="#1-Page编译指令" class="headerlink" title="1.Page编译指令"></a>1.Page编译指令</h4><p>   page编译指令常用于JSP页面顶端，用于定义页面一些属性，一个页面可以有多个page指令。</p>
+<pre><code>&lt;%@page
+[language=&quot;java&quot;]
+[extends=&quot;package.class&quot;]
+[import=&quot;package.class | package.* , ...&quot;]
+[session=&quot;ture | false&quot;]
+[buffer=&quot; 8kb | none | size kb &quot;]
+[autoFlush=&quot;true | false&quot;]
+[isThreadSafe=&quot;true | false&quot;]
+[info=&quot;text]
+[errorPage=&quot;relativeURL&quot;]
+[contentType=&quot;mimeType[;charset=characterSet]&quot; | &quot;text/html;charSet=ISO-8859-1&quot;]
+[pageEnconding=&quot;ISO-8859-1&quot;]
+[isErrorPage=&quot;true | false&quot;]
+%&gt;
+</code></pre><ul>
+<li>language:声明JSP页面使用的脚本语言环境的种类。默认是JAVA；</li>
+<li>extands：制定JSP页面编译所产生的JAVA类所继承的父类，或者所实现的接口；</li>
+<li>import：用来导入包；默认已经导入的包有：java.lang.*,javax.servlet.*,javax.servlet.jsp.*,javax.servlet.http.*;</li>
+<li>session:设定是否需要HTTP SESSION；</li>
+<li>buffer：制定缓冲区大小。输出缓冲区的JSP内部对象：out用于缓存JSP页面对客户浏览器的输出，默认为8KB，可以自己设定大小，也可以设置none；</li>
+<li>autoFlush：当输出缓冲区即将溢出时，是否需要强制输出缓冲区的内容；</li>
+<li>info：设置JSP页面信息，可以通过Servlet.getServletInfo()方法获取该值。如果在JSP页面可以直接调用getServletInfo()方法获取；</li>
+<li>errorPage：指定错误处理页面，如果本页面产生了异常或者错误，而该JSP页面没有对应的错误处理代码，则会自动调用该属性所指定的JSP页面，如果不设定，那么系统会把异常信息直接呈现给客户端浏览器；</li>
+<li>isErrorPage:设置本JSP页面是否为错误处理程序页面。如果属性值为true，那么errorPae属性不用指定；</li>
+<li>contentType：用于设定生成网页的文件格式和编码字符集，默认MIMI类型为text/html，字符集为ISO-8859-1；</li>
+<li>pageEnconding：指定生成网页的编码字符集；  </li>
+</ul>
+<h4 id="2-Include编译指令"><a href="#2-Include编译指令" class="headerlink" title="2.Include编译指令"></a>2.Include编译指令</h4><p>include指令可以将一个外部文件键入到当前JSP文件中，同时解析这个JSP页面。<strong>但是这是个静态的include语句，他会把目标页面的其他编译指令也包含进来</strong>，如果包含的编译指令冲突，那么页面会出错，静态指令会把目标页面的所有内容都包含进来合成新的页面，因此目标页面可以不需要是完整的页面。</p>
+<pre><code>&lt;%@include file=&quot;relativeURLSpec&quot;%&gt;
+</code></pre><p><strong>注意区别于JSP动作指令中的<a href="jsp:include" target="_blank" rel="noopener">jsp:include</a>，动态包含指令，这个指令不会嵌入目标页面的编译指令</strong></p>
+<h4 id="3-Taglib编译指令"><a href="#3-Taglib编译指令" class="headerlink" title="3.Taglib编译指令"></a>3.Taglib编译指令</h4><p>taglib指令用于定义和访问自定义标签  </p>
+<h2 id="JSP的7个动作指令"><a href="#JSP的7个动作指令" class="headerlink" title="JSP的7个动作指令"></a>JSP的7个动作指令</h2><p>JSP动作指令和编译指令不同，编译指令是在JSP变成成servlet是起作用，而动作指令指在运行时动作，其实际只是JSP脚本片段的标准化写法。</p>
+<ul>
+<li>jsp:forward:执行请求转发动作，将请求的处理转发到下一个页面；</li>
+<li>jsp:param：用于传递参数，必须与其他支持参数的动作指令一起使用；</li>
+<li>jsp:include:动态引入一个新的JSP页面；</li>
+<li>jsp:plugin:用于下载JavaBean或Applet到客户端执行;</li>
+<li>jsp:useBean:创建一个JavaBean的实例;</li>
+<li>jsp:setProperty:设置JavaBean实例的属性值;</li>
+<li>jsp:getProperty:输出JavaBean实例的属性值;</li>
+</ul>
+<h4 id="1-forward指令"><a href="#1-forward指令" class="headerlink" title="1.forward指令"></a>1.forward指令</h4><p>forward指令用于将页面响应转发到另外的页面，浏览器请求地址栏不会改变，页面会转发到目标页面，所以这是一个请求转发。他只是采用了新页面来对用户生成响应，实际http请求只有一次，和重定向的多次请求不同，无论转发多少次，但是该次的请求参数，请求属性都不会改变。</p>
+<pre><code>&lt;jsp:forward page=&quot;{relativeURL | &lt;%=expreesion%&gt;}&quot;&gt;
+     [&lt;jsp:param name=&quot;parameterName&quot; value=&quot;patameterValue&quot;/&gt;]
+&lt;/jsp:forward&gt;
+</code></pre><p>forward指令可以添加param指令，设置请求参数，然后在转发的目标页面可以用request内置对象调用getParamter()方法获得请求参数的属性值。</p>
+<h4 id="2-include指令"><a href="#2-include指令" class="headerlink" title="2.include指令"></a>2.include指令</h4><p>include指令是一个动态include指令，可以包含某个页面，但是不同于静态include编译指令，它只包含目标页面的body部分。</p>
+<pre><code>&lt;jsp:include page=&quot;{relativeURL | &lt;%=expreesion%&gt;}&quot; flush=&quot;true | false&quot;&gt;
+     [&lt;jsp:param name=&quot;parameterName&quot; value=&quot;parameterValue&quot;/&gt;]
+&lt;/jsp:include&gt;
+</code></pre><p>flush属性用于指定输出缓存是否转移到被导入文件中。</p>
+<p>include也可以对添加请求参数，同forward指令一样，在指定的<font color="red"><strong>被包含页面</strong></font>可以调用request内置对象调用getParamter()方法获得请求参数的属性值。</p>
+<blockquote>
+<p><strong>无论是include动作指令还是forward动作指令，其实际效果是在servlet的service方法中调用了相应的方法，forward指令调用的是_jspx_page_context的forward()方法来引入目标页面，include指令是调用JspRuntimeLibrary的include()方法来引入目标页面。区别在于，被forward的页面将完全替代原有页面，被include的页面只是插入到原有页面。</strong></p>
+</blockquote>
+<h5 id="静态include指令和动态include指令的区别"><a href="#静态include指令和动态include指令的区别" class="headerlink" title="静态include指令和动态include指令的区别"></a>静态include指令和动态include指令的区别</h5><ul>
+<li>静态导入是将被导入页面的代码完全融入，两个页面融合成一个整体Servlet；而动态导入则在Servlet中使用include方法来引入被导入页面的内容；</li>
+<li>静态导入时被导入页面的编译指令会起作用；而动态导入时被导入页面的编译指令则失去作用，只是插入被导入页面的body内容；</li>
+<li>动态包含还可以添加额外的参数；</li>
+</ul>
+<h4 id="3-useBean-setProperty-getProperty指令"><a href="#3-useBean-setProperty-getProperty指令" class="headerlink" title="3.useBean,setProperty,getProperty指令"></a>3.useBean,setProperty,getProperty指令</h4><p>useBean是实例化一个javaBean对象，setProperty是给javaBean对象属性设置值，getProperty是输出javaBean对象的属性值。</p>
+<p>useBean语法如下：  </p>
+<pre><code>&lt;jsp:useBean id=&quot;name&quot; class=&quot;className&quot; scope=&quot;page | request | session | application&quot;/&gt;
+</code></pre><ul>
+<li>id：javaBean的实例名；  </li>
+<li>class：确定javaBean的实现类；  </li>
+<li>scope：用于指定javeBean实例的作用范围，等同于这些方法：pageContext.setAttribute(“key命名”,javaBean实例化对象);//放入page范围，request.setAttribute(“key命名”,javaBean实例化对象);//放入request范围，session.setAttribute(“key命名”,javaBean实例化对象);//放入session范围，application.setAttribute(“key命名”,javaBean实例化对象);//放入application范围；</li>
+</ul>
+<blockquote>
+<ul>
+<li>page：该JavaBean实例紧在该页面有效。</li>
+<li>request：该JavaBean实例在本次请求有效。</li>
+<li>session：该JavaBean实例在本次session有效。</li>
+<li>application：该JavaBean实例在本应用内一直有效。</li>
+</ul>
+</blockquote>
+<p>setProperty语法如下： </p>
+<pre><code>&lt;jsp:setProperty name=&quot;BeanName&quot; property=&quot;porpertyName&quot; value=&quot;value&quot;/&gt;
+</code></pre><ul>
+<li>name:确定需要设定属性值的javaBean的实例名，等同于useBean指令中id属性的值。</li>
+<li>property:确定需要设定的属性名。</li>
+<li>value：确定需要设定的属性值。</li>
+</ul>
+<p>getProperty语法如下： </p>
+<pre><code>&lt;jsp:getProperty name=&quot;BeanName&quot; property=&quot;porpertyName&quot;/&gt;
+</code></pre><ul>
+<li>name:确定需要获得属性值的javaBean的实例名，等同于useBean指令中id属性的值。</li>
+<li>property:确定需要获得的属性名。</li>
+</ul>
+<p><em>关于setProperty和getProperty指令实际上是调用了javaBean类中的setter和getter两个方法，这两个指令他们都需要根据属性名来操作javaBean的属性，其实不然，他们与java类中定义的属性有一定区别，比如setProperty需要使用name属性，但javaBean中是否真正定义了这个成员name属性并不重要，重要的是一定要存在setName这个方法。</em></p>
+<h4 id="4-plugin指令"><a href="#4-plugin指令" class="headerlink" title="4.plugin指令"></a>4.plugin指令</h4><p>plugin指令主要用于下载服务器端的JavaBean或Applet到客户端执行，由于程序在客户端执行，因此客户端必须安装虚拟机，此指令用的场景不多。</p>
+<h4 id="5-param指令"><a href="#5-param指令" class="headerlink" title="5.param指令"></a>5.param指令</h4><p>param指令必须和forward，include，plugin指令联合使用，用于传递参数。</p>
+<pre><code>&lt;jsp:param name=&quot;parameterName&quot; value=&quot;parameterValue&quot;/&gt;
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/11/JSP基础学习一/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/11/JSP基础学习一/" itemprop="url">JSP基础学习一</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-11T16:23:55+08:00">
+                2016-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JSP/" itemprop="url" rel="index">
+                    <span itemprop="name">JSP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/07/11/JSP基础学习一/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/11/JSP基础学习一/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JSP基础语法学习"><a href="#JSP基础语法学习" class="headerlink" title="JSP基础语法学习"></a>JSP基础语法学习</h1><hr>
+<h2 id="JSP的4种基本语法"><a href="#JSP的4种基本语法" class="headerlink" title="JSP的4种基本语法"></a>JSP的4种基本语法</h2><h5 id="JSP注释"><a href="#JSP注释" class="headerlink" title="JSP注释"></a>JSP注释</h5><pre><code>&lt;%-- 注释内容 --%&gt;   ---JSP注释语法
+&lt;!-- 注释内容 --%&gt;   ---HTML注释语法
+</code></pre><p>JSP注释标志着JSP容器应该忽略的文本或者语句，可以隐藏相应的JSP语句段，当你不想让其出现在html页面中。当使用浏览器查看源码功能时，html注释内容会显示在浏览器中，而JSP注释这不会，会被隐藏。</p>
+<h5 id="JSP声明"><a href="#JSP声明" class="headerlink" title="JSP声明"></a>JSP声明</h5><pre><code>&lt;%! declaration; [ declaration; ]+ ... %&gt;
+等价于XML格式
+&lt;jsp:declaration&gt;
+   code fragment
+&lt;/jsp:declaration&gt; 
+</code></pre><p>JSP声明用于声明变量和方法。相当于JAVA内容的成员变量和成员方法的声明。可以使用public，private等访问控制修饰，也可以使用static修饰，但是<strong>不能使用abstract修饰</strong>，因为抽象方法会导致JSP对应的Servlet变成抽象类，从而导致无法实例化。</p>
+<h5 id="JSP表达式输出"><a href="#JSP表达式输出" class="headerlink" title="JSP表达式输出"></a>JSP表达式输出</h5><pre><code>&lt;%= expression %&gt;   ---expression后面不能有分号
+等价于XML格式
+&lt;jsp:expression&gt;
+   expression
+&lt;/jsp:expression&gt;
+</code></pre><p>JSP 表达式元素包含一个脚本语言表达式，该表达式被赋值，转换成一个字符串，并插入到表达式出现在 JSP 文件中的位置。其等价于使用了out.println输出语句。 </p>
+<p>根据 JAVA 语言规范，表达式元素可以包含任何有效的表达式，但你不能使用分号来结束一个表达式。</p>
+<h5 id="JSP脚本"><a href="#JSP脚本" class="headerlink" title="JSP脚本"></a>JSP脚本</h5><pre><code>&lt;% code fragment %&gt;
+等价于XML格式
+&lt;jsp:scriptlet&gt;
+   code fragment
+&lt;/jsp:scriptlet&gt;
+</code></pre><p>JSP脚本中的变量应该为局部变量，相当于_jspService的方法内部来执&gt;行JSP脚本片段，所以不能在里面定义方法和成员变量，但是可以使用方法与成员变量。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/05/前记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Richard">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pp.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Richard's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/05/前记/" itemprop="url">前记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-05T12:14:21+08:00">
+                2016-07-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计划/" itemprop="url" rel="index">
+                    <span itemprop="name">计划</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/07/05/前记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/05/前记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><hr>
+<p>学习是一个无止境的过程，尤其进入了软件这个行业每天面对的就是漫天的新技术，那么只有不停的学习才能不再这个行业中失去重要的地位，就目前而言，个人的能力还不足以在这个行业中获得更多的回报，那么只有不停的努力，才能铺好美好的明天。</p>
+<p>因此一个良好的学习计划，决定着是否能脚踏实地的学到真的本领，于是，必须列出一个详细的计划，将未来的路线规划清楚。</p>
+<h2 id="个人学习计划"><a href="#个人学习计划" class="headerlink" title="个人学习计划"></a>个人学习计划</h2><ol>
+<li>J2EE学习，熟悉JSP原理和流程</li>
+<li>学习spring框架及MVC的应用</li>
+<li>学习RxJava和RxAndroid语法已经在项目中的应用</li>
+<li>学习Linux基本知识</li>
+<li>学习shell脚本</li>
+</ol>
+<hr>
+<p>以上是2016年度7月份以后下半年的学习计划，希望今年能够做到自律，真正的把知识学给自己。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/pp.png"
+                alt="Richard" />
+            
+              <p class="site-author-name" itemprop="name">Richard</p>
+              <p class="site-description motion-element" itemprop="description">学无止境</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/categories.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/tags.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/niuniuRun" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/u/1666989457" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Richard</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"niuniurun"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.4"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
